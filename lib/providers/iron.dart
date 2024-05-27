@@ -363,6 +363,8 @@ class IronProvider extends StateNotifier<IronState> {
 
     final IronData ironData = extractData(chars);
 
+    print("New Data Update: $ironData");
+
     // Update state
     state = state.copyWith(
       data: ironData,
